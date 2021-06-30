@@ -1,0 +1,40 @@
+1)Посмотреть где я -  pwd
+2)Создать папку  - mkdir t_1
+3)Зайти в папку - cd t_1
+4)Создать 3 папки - mkdir t_2 t_3 t_4
+5)Зайти в любую папку -  cd home/jamann/t_1
+6)Создать 5 файлов (3txt 2json) - touch t1.txt t2.txt t3.txt t4.json t5.json
+7)Создать 3 папки - mkdir t_5
+                    mkdir t_6
+                    mkdir t_7
+8)Вывести список содержимого папки - ls
+9)Открыть любой txt файл - vim t1.txt 
+10)Написать любой текст - нажать i ввести текст
+11)Сохранить и выйти - нажать Esc написать :wq
+12)Выйти из папки на уровень выше cd .. 
+   выйти на 2 уровня выше cd ../..
+13)Переместить любые 2 созданных файла в любую др папку - mv t1.txt t5.json t_2/14) Скопировать любые 2 файла которые создали в любую другую папку - /home/jamann/t_2/t1.txt /home/jamann/t_2/t5.json /home/jamann/t_3/
+15)Найти файл по имени - find /home/jamann/ -type f -name t1.txt
+16)Посомтреть содержимое в реальном времени - grep t[1-5] /home/jamann/domzadanie.txt
+Покажет сочетание буквы t и цифр вместе с ней от 1 до 5 в указанном файле domzadanie.txt
+17)Вывести несколько первых строк текстового файла - head domzadanie.txt выводит первые 10 строк, с опцией -nX х-количество выводимых строк
+18)Вывести несколько последних строк текстового файла - tail domzadanie.txt - выводит 10 последних строк, так же опция -nX х-количество требуемых для вывода строк tail -n4 domzadanie.txt выводит 4 последних строки файла.
+19) Посмотреть содержимое длинного файла с помощью команды less - less +7 domzadanie.txt откроет файл для просмотра с 7 строки.
+20)Вывести текущую дату - date
+
+*
+curl https://api.quarantine.country/api/v1/regions
+
+Скрипт выполнения задания под *
+
+# !/bin/bash
+
+mkdir scriptfolder
+cd scriptfolder
+mkdir scriptf1 scriptf2 scriptf3
+cd scriptf1
+touch test.txt test1.txt test2.txt test3.json test4.json
+mkdir scriptf4 scriptf5 scriptf6
+ls -la
+mv test.txt test1.txt /home/jamann/scriptfolder/scriptf3
+
